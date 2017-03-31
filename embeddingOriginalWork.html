@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <title>Hello World</title>
+		<style>
+        #map {
+            height: 400px;
+            width: 50%;
+        }
+        </style>
+	</head>
+	<body>
+	    <h1>Hello World</h1>
+		<h2>We are going to learn Java programming today</h2>
+		<img src="http://www.cbronline.com/wp-content/uploads/2016/06/Java.png">
+	    <h3>First, install Java Development Kit.</h3>
+		<iframe width="660" height="415" 
+		src="https://www.youtube.com/embed/Hl-zzrqQoSE?list=PLFE2CE09D83EE3E28&start=180" frameborder="0" allowfullscreen>
+		</iframe>
+		<h3>The best place to learn Java is</h3>
+		<div id="map"></div>
+		<script>
+        function initMap() {
+           var uluru = {lat: 47.65532858402682, lng: -122.30358123779297};
+           var map = new google.maps.Map(document.getElementById('map'), {
+           zoom: 4,
+           center: uluru
+           });
+           var marker = new google.maps.Marker({
+           position: uluru,
+           map: map
+           });
+        }
+        </script>
+        <script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjDbG9tI0Y1DlYD5o5V-gStiwWkpfrxdo&callback=initMap">
+		</script>
+		<p><a href="https://courses.cs.washington.edu/courses/cse142/17sp/">Visit Current CSE 142 Home Page</a></p>
+		<p><a href="https://practiceit.cs.washington.edu/">And Practice More on Practice-It!</a></p>
+		<p>Jiahui Chen</p>
+		<p>Created on 03/30/2017</p>
+	</body>
+</html>	
